@@ -53,15 +53,16 @@ h1 {
 
 article {
     position: absolute;
-    top: 515px;
+    top: 450px;
     left: 300px;
-    right: 30px;
+    right: 20px;
     background: radial-gradient(#eee, #e1e2e6);
 	opacity: 0.75;
     padding: .75rem;
     }
-article img {
+.hero article img {
         float: right;
+        width: 200px;
     }
 
 
