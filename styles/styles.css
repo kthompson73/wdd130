@@ -5,7 +5,7 @@
 }
 
 nav{
-    background-color: steelblue;
+    background-color: rgb(27, 78, 121);
     padding: 1rem;
     display: flex;
     justify-content: space-evenly;
@@ -15,8 +15,8 @@ nav a {
     color: white;
     display: block;
     padding: .5rem;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 h1 {
     padding: .3rem;
