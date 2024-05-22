@@ -5,7 +5,7 @@
     box-sizing: border-box;
     }
     body {
-        font-family: inter, arial, sans-serif;
+        font-family: "inter", "arial", sans-serif;
         font-size: 1em;
         color: rgb(22, 37, 105);
         background-color: 000;
@@ -45,7 +45,7 @@
     }
     label, input, button, select, textarea 
     {
-    font-family: zilla slab, cambria, serif;
+    font-family: "zilla slab", "cambria", serif;
     font-size: 1.1em;
     }
     label {
