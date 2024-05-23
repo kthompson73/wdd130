@@ -10,11 +10,7 @@
         color: rgb(22, 37, 105);
         background-color: #fff;
     }
-    header 
-    {
-        margin: 0 auto;
-        width: 500px;
-    }
+    
     h1 
     {
         margin: 1em;
@@ -26,39 +22,24 @@
         width: 500px;
         margin: 0 auto;
         padding: 1em;
-        border: 3px solid rgb(67,93,207);
+        border: 2px solid rgb(10, 84, 102);
         border-radius: 1rem;
         background-color: rgba(213, 241, 241, 0.4);
         display: grid;
     }
-    fieldset {
-        margin: .5em;
-        border: 1px solid rgb(67, 93, 207);
-        padding: 1.2em;
-    }
-    legend {
-        padding: .25em;
-        color: rgb(22, 37, 105);
-        font-size: 1.2em;
-    }
+     
     label, input, button, select, textarea 
     {
     font-family: "zilla slab", "cambria", serif;
     font-size: 1.1em;
     }
     label {
-        text-align: right;
-        padding-right: .5em;
-        }
+        text-align: left;
+        padding-right: 1em;
+    }
     input, select, textarea {
     padding: .5em;
     font-size: 1.1em;
-    }
-    input[type="checkbox"] 
-    {
-    width: 20px;
-    height: 20px;
-    vertical-align: bottom;
     }
     button 
     {
@@ -68,39 +49,16 @@
     border: none;
     border-radius: .5em;
     padding: .5em;
-    width: 10em;
-    font-size: 1.25em;
+    width: 8em;
+    font-size: 1.2em;
     }
     button:hover 
     {
-    background-color:rgb(240, 238, 109);
+    background-color:rgb(148, 235, 250);
     color:rgb(22, 37, 105);
     }
-    footer 
-    {
-    margin: 1em auto 0;
-    width: 400px;
-    text-align: center;
-    padding: .5em;
-    font-size: .8em;
-    color:rgb(67, 93, 207);
-    border-top: 1px solid rgb(240, 238, 109);
-    }
-    .form-items 
-    {
-        display: grid;
-        align-items: center;
-    }
-    .column1 
-    {
-        grid-template-columns: 3fr 1fr;
-        margin: 1em 0;
-        
-    }
-    .column2 
-    {
-       grid-template-columns: 1fr 2fr; 
-       margin: .5em 0;
-    }
-    .feedback {text-align: right;
-    }
+
+  
+ 
+
+  
