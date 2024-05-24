@@ -3,7 +3,8 @@ body {
     font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
-}
+    margin: auto;
+    }
 :root {
     --primary-color: #396c9d;
     --secondary-color: #1f7181;
@@ -143,3 +144,94 @@ footer {
               align-items: center;
 
             }
+.employees {
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 300px); 
+    grid-template-rows: 20px;
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;
+    }
+    .employees h2 {
+        grid-column: 1/4;
+        grid-row: 1;
+        justify-self: center;
+        align-self: center;
+     }
+     form 
+    {
+        width: 400px;
+        margin: 0 auto;
+        padding: 1em;
+        border: 2px solid #5BA4B2;
+        border-radius: 1rem;
+        background-color: rgba(213, 241, 241, 0.4);
+        display: grid;
+    }
+    
+    
+    label, input, button, textarea 
+    {
+    font-family: "zilla slab", "cambria", serif;
+    font-size: 1.1em;
+    }
+    label {
+        text-align: right;
+        padding-right: .5em;
+        }
+    input, textarea {
+    padding: .5em;
+    font-size: 1.1em;
+    }
+    input[type="checkbox"] 
+    {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+    }
+    button 
+    {
+    margin: .5em;
+    background-color: rgb(22, 37, 105);
+    color: #fff;
+    border: none;
+    border-radius: .5em;
+    padding: .5em;
+    width: 10em;
+    font-size: 1.25em;
+    }
+    button:hover 
+    {
+    background-color:#f5c810;
+    color:rgb(22, 37, 105);
+    }
+    
+    .form-items 
+    {
+        display: grid;
+        align-items: center;
+    }
+    .column1 
+    {
+        grid-template-columns: 3fr 1fr;
+        margin: 1em 0;
+              
+    }
+    .column2 
+    {
+       grid-template-columns: 1fr 2fr; 
+       margin: .5em 0;
+    }
+    .feedback {text-align: right;
+    
+       }
+    .newsletter {font-size: 14px;
+    padding: .5em;}
+
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+     }
+ 
