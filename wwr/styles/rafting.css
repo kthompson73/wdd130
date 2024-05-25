@@ -133,7 +133,7 @@ article {
         
 figcaption {
                 background-color: var(--accent1-color);
-                color: var(--primary-color);
+                color: var(--accent2-color);
                 font-weight: 700;
                 padding: 3px;
                 text-align: center;
