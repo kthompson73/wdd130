@@ -19,6 +19,9 @@ body {
     --nav-hover-link-color: #f5c810;
     --nav-hover-background-color: #396c9d;
 }
+*, *:before, *::after {
+    box-sizing: border-box;
+ }
 header {
     margin: 1rem auto;
     display: grid;
@@ -130,7 +133,7 @@ article {
         
 figcaption {
                 background-color: var(--accent1-color);
-                color: #123352;
+                color: var(--primary-color);
                 font-weight: 700;
                 padding: 3px;
                 text-align: center;
@@ -145,13 +148,13 @@ footer {
 
             }
 .employees {
-    margin: 4rem;
     display: grid;
-    grid-template-columns: repeat(3, 300px); 
+    grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: 20px;
-    grid-gap: 10px;
+    grid-gap: 30px;
     align-items: center;
-    justify-items: center;
+    margin: 60px 0 0 0;
+   
     }
     .employees h2 {
         grid-column: 1/4;
@@ -159,18 +162,18 @@ footer {
         justify-self: center;
         align-self: center;
      }
+      
      form 
     {
         width: 400px;
         margin: 0 auto;
         padding: 1em;
-        border: 2px solid #5BA4B2;
+        border: var(--secondary-color) 2px solid;
         border-radius: 1rem;
-        background-color: rgba(213, 241, 241, 0.4);
+        background-color: rgba(213, 241, 241, 0.4); 
         display: grid;
     }
-    
-    
+        
     label, input, button, textarea 
     {
     font-family: "zilla slab", "cambria", serif;
@@ -193,8 +196,8 @@ footer {
     button 
     {
     margin: .5em;
-    background-color: rgb(22, 37, 105);
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--nav-link-color);
     border: none;
     border-radius: .5em;
     padding: .5em;
@@ -203,8 +206,8 @@ footer {
     }
     button:hover 
     {
-    background-color:#f5c810;
-    color:rgb(22, 37, 105);
+    background-color: var(--nav-hover-link-color);
+    color: var(--accent2-color);
     }
     
     .form-items 
@@ -234,4 +237,4 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
      }
- 
+   
