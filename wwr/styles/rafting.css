@@ -72,18 +72,12 @@ a:link {
     height: auto;
 }
 
-h1 {
-    position: absolute;
-    top: 10px;
-    left: 25px;
-   	background: radial-gradient(#eee, #e1e2e6);
-	padding: .75rem;
-    opacity: 0.75;
-}
+h1 {text-align: center;
+    }
 
 article {
     position: absolute;
-    top: 450px;
+    top: 400px;
     left: 300px;
     right: 20px;
     background: radial-gradient(#eee, #e1e2e6);
