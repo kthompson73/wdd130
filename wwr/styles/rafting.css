@@ -264,7 +264,6 @@ footer {
          .booknow:hover {
             background-color: var(--accent1-color);
             color: var(--nav-link-color);
-            font-weight: 400px;
             text-decoration: none;
         }
        table {
