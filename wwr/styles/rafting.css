@@ -49,8 +49,8 @@ nav a:hover {
 	text-decoration: underline;
 }
 h1 {font-family: var(--heading-font);
-    color: var(--primary-color)
-    ;
+    color: var(--primary-color);
+    text-align: center;
 }
 
 h2, h3, h4, h5, h6 {
@@ -71,9 +71,6 @@ a:link {
     width: 100%;
     height: auto;
 }
-
-h1 {text-align: center;
-    }
 
 article {
     position: absolute;
@@ -116,8 +113,7 @@ article {
         grid-gap: 10px;
         align-items: center;
         justify-items: center;
-              
-       }
+    }
 .adventure h2 {
             grid-column: 1/6;
             grid-row: 1;
@@ -231,4 +227,66 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
      }
-   
+     .trips {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: 20px;
+        grid-gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 0 0 0;
+       
+        }
+        .trips h2 {
+            grid-column: 1/4;
+            grid-row: 1;
+            justify-self: center;
+            align-self: center;
+         }
+
+         .trips-item {
+            background-color: var(--primary-color);
+            color: var(--nav-link-color);
+            font-weight: 500;
+            padding: 10px;
+            text-align: center;
+         }
+         .booknow {
+         background-color: var(--nav-link-color);
+         color: var(--primary-color);
+         border-style: double;
+         border-color: var(--accent1-color);
+         padding: .1em;
+         width: auto;
+         font-size: .75em;
+       }
+        
+         .booknow:hover {
+            background-color: var(--accent1-color);
+            color: var(--nav-link-color);
+            font-weight: 400px;
+            text-decoration: none;
+        }
+       table {
+        
+        border: 1px solid var(--accent1-color);
+        font-size: 1em;
+        width: 600px;
+        height: 400px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        
+       }
+       tfoot {
+        font-size: .9em;
+        background-color: var(--secondary-color);
+        color: var(--nav-link-color);
+               }
+       .trip-detail {margin-top: 50px;
+    text-align: center;}
+    thead { 
+        background-color: var(--secondary-color);
+        color: var(--nav-link-color);
+        font-size: 16px; 
+    }
