@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
     margin: auto;
-    }
+}
+
 :root {
     --primary-color: #396c9d;
     --secondary-color: #1f7181;
@@ -19,9 +21,13 @@ body {
     --nav-hover-link-color: #f5c810;
     --nav-hover-background-color: #396c9d;
 }
-*, *:before, *::after {
+
+*,
+*:before,
+*::after {
     box-sizing: border-box;
- }
+}
+
 header {
     margin: 1rem auto;
     display: grid;
@@ -30,42 +36,55 @@ header {
     align-items: center;
     max-width: 960px;
 }
-nav{
+
+nav {
     background-color: #fff;
     padding: .1rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+
 nav a {
     color: var(--primary-color);
     padding: .1rem;
     font-size: 1.2rem;
     font-weight: 600;
 }
+
 nav a:hover {
-	color: var(--secondary-color);
-	font-weight: 600;
-	text-decoration: underline;
+    color: var(--secondary-color);
+    font-weight: 600;
+    text-decoration: underline;
 }
-h1 {font-family: var(--heading-font);
+
+h1 {
+    font-family: var(--heading-font);
     color: var(--primary-color);
     text-align: center;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
 }
+
 p {
     color: var(--accent2-color);
 }
+
 a:link {
     text-decoration: none;
 }
+
 .hero {
     position: relative;
-    }
+}
+
 .hero img {
     display: block;
     width: 100%;
@@ -78,113 +97,125 @@ article {
     left: 300px;
     right: 20px;
     background: radial-gradient(#eee, #e1e2e6);
-	opacity: 0.75;
+    opacity: 0.75;
     padding: .5rem;
-    }
+}
+
 .hero article img {
-        float: right;
-        width: 200px;
-    }
+    float: right;
+    width: 200px;
+}
+
 .history {
     margin: .5rem;
     display: grid;
-    grid-template-columns: 1fr 250px 1fr; 
+    grid-template-columns: 1fr 250px 1fr;
     grid-template-rows: 10px;
     grid-gap: 30px;
-     }
+}
+
 .history h2 {
-        grid-column: 1/4;
-        grid-row: 1;
-        justify-self: center;
-        align-self: start;
-     }
+    grid-column: 1/4;
+    grid-row: 1;
+    justify-self: center;
+    align-self: start;
+}
+
 .history img {
-        grid-column: 2/3;
-        grid-row: 2;
-        justify-self: center;
-        align-self: center;
-    }
+    grid-column: 2/3;
+    grid-row: 2;
+    justify-self: center;
+    align-self: center;
+}
 
 .adventure {
-        margin: 1.5rem;
-        display: grid;
-        grid-template-columns: repeat(5, 175px); 
-        grid-template-rows: 20px;
-        grid-gap: 10px;
-        align-items: center;
-        justify-items: center;
-    }
-.adventure h2 {
-            grid-column: 1/6;
-            grid-row: 1;
-            justify-self: center;
-            align-self: center;
-         }
-        
-figcaption {
-                background-color: var(--accent1-color);
-                color: var(--accent2-color);
-                font-weight: 700;
-                padding: 3px;
-                text-align: center;
-              }
-footer {
-              margin: 4em;
-              display: grid;
-              grid-template-columns: 2fr 1fr;
-              grid-gap: 20px;
-              justify-items: end;
-              align-items: center;
+    margin: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(5, 175px);
+    grid-template-rows: 20px;
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;
+}
 
-            }
+.adventure h2 {
+    grid-column: 1/6;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+}
+
+figcaption {
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    font-weight: 700;
+    padding: 3px;
+    text-align: center;
+}
+
+footer {
+    margin: 4em;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    justify-items: end;
+    align-items: center;
+
+}
+
 .employees {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 20px;
     grid-gap: 40px;
     align-items: center;
     margin: 60px 0 0 0;
-   
-    }
-    .employees h2 {
-        grid-column: 1/4;
-        grid-row: 1;
-        justify-self: center;
-        align-self: center;
-     }
-      
-     form 
-    {
-        width: 400px;
-        margin: 0 auto;
-        padding: 1em;
-        border: var(--secondary-color) 2px solid;
-        border-radius: 1rem;
-        background-color: rgba(213, 241, 241, 0.4); 
-        display: grid;
-    }
-        
-    label, input, button, textarea 
-    {
+
+}
+
+.employees h2 {
+    grid-column: 1/4;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 1em;
+    border: var(--secondary-color) 2px solid;
+    border-radius: 1rem;
+    background-color: rgba(213, 241, 241, 0.4);
+    display: grid;
+}
+
+label,
+input,
+button,
+textarea {
     font-family: "zilla slab", "cambria", serif;
     font-size: 1.1em;
-    }
-    label {
-        text-align: right;
-        padding-right: .5em;
-        }
-    input, textarea {
+}
+
+label {
+    text-align: right;
+    padding-right: .5em;
+}
+
+input,
+textarea {
     padding: .5em;
     font-size: 1.1em;
-    }
-    input[type="checkbox"] 
-    {
+}
+
+input[type="checkbox"] {
     width: 20px;
     height: 20px;
     vertical-align: bottom;
-    }
-    button 
-    {
+}
+
+button {
     margin: .5em;
     background-color: var(--primary-color);
     color: var(--nav-link-color);
@@ -193,99 +224,130 @@ footer {
     padding: .5em;
     width: 10em;
     font-size: 1.25em;
-    }
-    button:hover 
-    {
+}
+
+button:hover {
     background-color: var(--nav-hover-link-color);
     color: var(--accent2-color);
-    }
-    
-    .form-items 
-    {
-        display: grid;
-        align-items: center;
-    }
-    .column1 
-    {
-        grid-template-columns: 3fr 1fr;
-        margin: 1em 0;
-              
-    }
-    .column2 
-    {
-       grid-template-columns: 1fr 2fr; 
-       margin: .5em 0;
-    }
-    .feedback {text-align: right;
-    
-       }
-    .newsletter {font-size: 14px;
-    padding: .5em;}
+}
 
-    .contact {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-     }
-     .trips {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); 
-        grid-template-rows: 20px;
-        grid-gap: 20px;
-        align-items: center;
-        justify-content: center;
-        margin: 50px 0 0 0;
-       
-        }
-        .trips h2 {
-            grid-column: 1/4;
-            grid-row: 1;
-            justify-self: center;
-            align-self: center;
-         }
+.form-items {
+    display: grid;
+    align-items: center;
+}
 
-         .trips-item {
-            background-color: var(--primary-color);
-            color: var(--nav-link-color);
-            font-weight: 500;
-            padding: 10px;
-            text-align: center;
-         }
-         .booknow {
-         background-color: var(--nav-link-color);
-         color: var(--primary-color);
-         border-style: double;
-         border-color: var(--accent1-color);
-         padding: .1em;
-         width: auto;
-         font-size: .75em;
-       }
-        
-         .booknow:hover {
-            background-color: var(--accent1-color);
-            color: var(--nav-link-color);
-            text-decoration: none;
-        }
-       table {
-        
-        border: 1px solid var(--accent1-color);
-        font-size: 1em;
-        width: 600px;
-        height: 400px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        
-       }
-       tfoot {
-        font-size: .9em;
-        background-color: var(--secondary-color);
-        color: var(--nav-link-color);
-               }
-       .trip-detail {margin-top: 50px;
-    text-align: center;}
-    thead { 
-        background-color: var(--secondary-color);
-        color: var(--nav-link-color);
-        font-size: 16px; 
-    }
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 1em 0;
+
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: .5em 0;
+}
+
+.feedback {
+    text-align: right;
+
+}
+
+.newsletter {
+    font-size: 14px;
+    padding: .5em;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.trips {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20px;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 0 0;
+
+}
+
+.trips h2 {
+    grid-column: 1/4;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+}
+
+.trips-item {
+    background-color: var(--primary-color);
+    color: var(--nav-link-color);
+    font-weight: 500;
+    padding: 10px;
+}
+
+.booknow {
+    background-color: var(--nav-link-color);
+    color: var(--primary-color);
+    border-style: double;
+    border-color: var(--accent1-color);
+    padding: .1em;
+    width: auto;
+    font-size: .75em;
+}
+
+.booknow:hover {
+    background-color: var(--accent1-color);
+    color: var(--nav-link-color);
+    text-decoration: none;
+}
+
+table {
+    border: 1px solid var(--accent1-color);
+    font-size: 1em;
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+tfoot {
+    font-size: .9em;
+    background-color: var(--secondary-color);
+    color: var(--nav-link-color);
+}
+
+.trip-detail {
+    margin-top: 50px;
+    text-align: center;
+}
+
+thead {
+    background-color: var(--secondary-color);
+    color: var(--nav-link-color);
+    font-size: 16px;
+}
+
+.rapids-message {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    right: 300px;
+    color: var(--primary-color);
+    font-size: 36px;
+    font-style: italic;
+    background: radial-gradient(#eee, #e1e2e6);
+    opacity: 0.95;
+    padding: .5rem;
+}
+
+.rapids-message:hover {
+    color: var(--accent1-color);
+    text-decoration: none;
+    background: radial-gradient(#06558a, #1e60c2);
+    opacity: 0.95;
+}
